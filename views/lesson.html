@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web site/indexPage </title>
+    <!-- **************************all link style***************** -->
+    <!-- ----------- css link booststrab  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <!-- ------------  link font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ----------- ----- link style css -->
+    <link rel="stylesheet" href="../public/css/style.css">
+    <!---------------------- link btn css -->
+    <link rel="stylesheet" href="../public/css/btn.css">
+    <!-- -----------------   media css -->
+    <link rel="stylesheet" href="../public/css/media.css">
+</head>
+
+<body>
+    <header>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <button type="button" class="btn-close " data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="row">
+                    <div class="col saidbar  ">
+                        <div class="position-sticky d-flex  flex-column gap-5 ">
+                            <div class="saidbar_content_top  ">
+                                <h3 class="saidbar_text_saxifa">Saxifalar</h3>
+                                <ul class="nav flex-column gap-3  ">
+                                    <li class="nav-item">
+                                        <a href="../index.html">
+                                            <i class="fa-solid fa-house fs-6 ps-1 "></i>
+                                            <span class="ms-2 mt-1">Home</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="modul.html">
+                                            <i class="fa-brands fa-hive ps-1"></i>
+                                            <span class="ms-2 mt-1">Modul</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="lessons.html">
+                                            <i class="fa-solid fa-book ps-1"></i>
+                                            <span class="ms-2 mt-1">lessons</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="active" >
+                                            <i class="fa-solid fa-pen-to-square ps-1"></i>
+                                            <span class="ms-2 mt-1">lesson</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#">
+                                            <i class="fa-solid fa-circle-user ps-1"></i>
+                                            <span class="ms-2 mt-1">deshboard</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="saidbar_content_bottom ">
+                                <h3 class="saidbar_text_icon mt-2 ">Ijtimoiy tarmoqlarda bizni kuzating:</h3>
+                                <ul class=" nav d-flex justify-content-between px-3 ">
+                                    <li class="nav-item text-white ">
+                                        <i class="fa-brands fa-instagram fs-4 "></i>
+                                    </li>
+                                    <li class="nav-item text-white">
+                                        <i class="fa-brands fa-telegram fs-4 "></i>
+                                    </li>
+                                    <li class="nav-item text-white">
+                                        <i class="fa-brands fa-linkedin  fs-4 "></i>
+                                    </li>
+                                    <li class="nav-item text-white">
+                                        <i class="fa-brands fa-youtube fs-4 "></i>
+                                    </li>
+                                    <li class="nav-item text-white">
+                                        <i class="fa-brands fa-github fs-4 "></i>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <!-- -------------------------- navbar start -->
+        <nav class="navbar bg-body-tertiary p-1 navbar-dark    ">
+            <div class="container-fluid d-flex align-content-center  ">
+                <div class="navbar-brand d-flex align-items-center gap-3 ">
+                    <div class="navbar_menu  d-none  ">
+                        <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                            aria-controls="offcanvasExample">
+                            <i class="fa-solid fa-bars"></i>
+                        </a>
+                    </div>
+                    <a href="../index.html" class="home_link">
+                        <img src="https://www.sammi.ac/favicon.svg" alt="">
+                        boymen
+                    </a>
+
+                </div>
+                <div class="navbar_account d-flex align-items-center  ">
+                    <ul class="connect">
+                        <a href="#">
+                            <i class="fa-regular fa-address-book text-white fs-4 mt-2 "></i> </a>
+                    </ul>
+                    <ul class="user pt-2">
+                        <a href="#">
+                            <img width="50px" class="rounded-circle "
+                                src="https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yZUlmTTNsbzBrQzk2YnJ0QVJyTndGZkJLejQifQ?width=80"
+                                alt="">
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- ---------------------------- saidbar start -->
+        <div class="row main container-fluid d-flex justify-content-between   ">
+            <div class="col-xl-2 col-lg-3 col-md-3 col-sm-3  col-8 saidbar d-none d-sm-block  ">
+                <div class="position-sticky d-flex  flex-column gap-5 ">
+                    <div class="saidbar_content_top mb-5 ">
+                        <h3 class="saidbar_text_saxifa">Saxifalar</h3>
+                        <ul class="nav flex-column gap-3  ">
+                            <li class="nav-item">
+                                <a href="../index.html">
+                                    <i class="fa-solid fa-house fs-6 ps-1 "></i>
+                                    <span class="ms-2 mt-1">Home</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="modul.html">
+                                    <i class="fa-brands fa-hive ps-1"></i>
+                                    <span class="ms-2 mt-1">Modul</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="lessons.html">
+                                    <i class="fa-solid fa-book ps-1"></i>
+                                    <span class="ms-2 mt-1">lessons</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="active" >
+                                    <i class="fa-solid fa-pen-to-square ps-1"></i>
+                                    <span class="ms-2 mt-1">lesson</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">
+                                    <i class="fa-solid fa-circle-user ps-1"></i>
+                                    <span class="ms-2 mt-1">deshboard</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div style="margin-top:0px !important;" class="saidbar_content_bottom mt-5 pt-5 ">
+                        <h3 class="saidbar_text_icon mt-2 ">Ijtimoiy tarmoqlarda bizni kuzating:</h3>
+                        <ul class=" nav d-flex justify-content-between px-3 ">
+                            <li class="nav-item text-white ">
+                                <i class="fa-brands fa-instagram fs-4 "></i>
+                            </li>
+                            <li class="nav-item text-white">
+                                <i class="fa-brands fa-telegram fs-4 "></i>
+                            </li>
+                            <li class="nav-item text-white">
+                                <i class="fa-brands fa-linkedin  fs-4 "></i>
+                            </li>
+                            <li class="nav-item text-white">
+                                <i class="fa-brands fa-youtube fs-4 "></i>
+                            </li>
+                            <li class="nav-item text-white">
+                                <i class="fa-brands fa-github fs-4 "></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- **********************************  main content start -->
+            <div class="col-xl-10 col-lg-9 col-md-9 col-sm-9 col-12 main_content  ">
+                <!-- ---- block_one start -->
+                <div class="row block_less ">
+                    <div class="col-xl-8 col-lg-8 col-md-12 col-12 block_less_video  ">
+                        <video
+                            src="../assets/video/HTML уроки. Первый урок по HTML верстке. Уроки HTML CSS JS. Урок №1.mp4"
+                            controls></video>
+                    </div>
+                    <!--  -->
+                    <div class="col-xl-4 col-lg-4 col-md-12 col-12">
+                        <div class="acc-kontainer">
+                            <div>
+                                <input type="radio" name="acc" id="acc1" checked>
+                                <label for="acc1"><i class="fa-brands fa-html5 me-2 fs-4 "></i> html lessons</label>
+                                <div class="acc-body">
+
+                                </div>
+                            </div>
+                            <div>
+                                <input type="radio" name="acc" id="acc2">
+                                <label for="acc2"><i class="fa-brands fa-css3-alt me-2 fs-4"></i>css lessons</label>
+                                <div class="acc-body">
+
+                                </div>
+                            </div>
+                            <div>
+                                <input type="radio" name="acc" id="acc3">
+                                <label for="acc3"><i class="fa-brands fa-js me-2 fs-4"></i> javaScript lessons</label>
+                                <div class="acc-body">
+
+                                </div>
+                            </div>
+                            <div>
+                                <input type="radio" name="acc" id="acc4">
+                                <label for="acc4"> <i class="fa-brands fa-bootstrap me-2 fs-4"></i> booststrab
+                                    lessons</label>
+                                <div class="acc-body">
+
+                                </div>
+                            </div>
+                            <div>
+                                <input type="radio" name="acc" id="acc5">
+                                <label for="acc5"><i class="fa-brands fa-sass me-2 fs-4"></i> scss lessons</label>
+                                <div class="acc-body">
+
+                                </div>
+                            </div>
+                            <div>
+                                <input type="radio" name="acc" id="acc6">
+                                <label for="acc6"><i class="fa-brands fa-vuejs me-2 fs-4"></i> vue js lessons</label>
+                                <div class="acc-body">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div
+                        class="col-12 mt-4  block_lesson_end  rounded-2 p-4  d-flex align-items-center justify-content-between ">
+                        <h1>Demo Loyha </h1>
+                        <button>darsni yakunlash <i class="fa-regular fa-circle-check ms-1 "></i> </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- **************************** all js links****************************** -->
+    <!-- --------- js link bootstrab  -->
+
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../public/js/script.js"></script>
+</body>
+
+</html>

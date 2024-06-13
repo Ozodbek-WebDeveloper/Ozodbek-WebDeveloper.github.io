@@ -1,0 +1,635 @@
+:root {
+    --color-dark: #111827;
+    --color-white: #f8fafc;
+    --color-line: #e5e7eb5e;
+    --color-active-hover: #1e293b;
+    --color-site_bg: #020817;
+    --color-text: #e7e7e7;
+    --color-btn-light: #3b82f6;
+}
+
+* {
+    font-family: sans-serif;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::before,
+::after {
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+}
+
+.offcanvas{
+    background: var(--color-dark);
+}
+
+
+.offcanvas .btn-close{
+    /* color: var(--color-white) !important; */
+    color: red !important;
+    background-color: white !important;
+}
+
+.main {
+    width: 100%;
+    height: 100vh !important;
+    overflow: hidden;
+    background-color: var(--color-site_bg);
+    overflow-y: scroll;
+    margin-top: 80px;
+    padding-bottom: 70px;
+}
+
+
+.main::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+/* ----- navbar start */
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-dark) !important;
+    border-bottom: 0.5px solid var(--color-line);
+}
+
+@media(max-width:576px) {
+    .navbar_menu {
+        display: block !important;
+    }
+
+}
+
+/* --------------------  main start */
+
+.saidbar {
+    background-color: var(--color-dark);
+    height: 100vh;
+    padding: 20px;
+    overflow-y: scroll;
+}
+
+.saidbar::-webkit-scrollbar {
+    display: none;
+}
+
+
+.home_link{
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--color-white);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+
+.saidbar_text_saxifa {
+    color: var(--color-white);
+    font-size: 18px;
+}
+
+.saidbar .nav {
+    border-top: 1px solid var(--color-line);
+    padding-top: 30px;
+}
+
+.saidbar .nav .nav-item a {
+    text-decoration: none;
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.saidbar .nav .nav-item a.active {
+    background-color: var(--color-active-hover);
+}
+
+.saidbar .nav .nav-item a:hover {
+    background-color: var(--color-active-hover);
+
+}
+
+/* ---------- */
+.saidbar_text_icon {
+    color: var(--color-line);
+    letter-spacing: 0.4px;
+    font-size: 13px
+}
+
+/* *********************************************main content start********************** */
+
+.main_content {
+    height: 100vh;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.main_content::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+/* -----------------------------  start block one  */
+.block_one {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border-radius: 10px !important; */
+    /* background: rgb(56, 124, 234);
+    background: linear-gradient(90deg, rgba(56, 124, 234, 1) 0%, rgba(2, 10, 26, 1) 100%); */
+}
+
+.block_one .block_one_img {
+    width: 100%;
+    height: 100% !important;
+    border-radius: 10px 0 0 10px;
+    background: rgb(59, 129, 243);
+    background: linear-gradient(90deg, rgba(59, 129, 243, 1) 0%, rgba(2, 8, 23, 1) 100%);
+    overflow: hidden;
+}
+
+
+
+.block_one .block_one_item {
+    width: 100% !important;
+    height: 384px !important;
+    padding-left: 10px;
+    /* background-color: red; */
+    border-radius: 0 10px 10px 0;
+    flex-grow: 1;
+    background: rgb(2, 8, 23);
+    background: linear-gradient(90deg, rgba(2, 8, 23, 1) 0%, rgba(29, 40, 58, 1) 100%);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.block_one .block_one_item .block_one_text h3 {
+    color: var(--color-white);
+    font-size: 1.875rem;
+    font-weight: 700;
+    text-shadow: 0 0 2px white;
+    font-size: 35px;
+}
+
+.block_one .block_one_item .block_one_text h3 span {
+    color: var(--color-btn-light);
+    text-shadow: none;
+}
+
+.block_one .block_one_item .block_one_text p {
+    color: var(--color-line);
+}
+
+/* ----------------------------------- start block two  */
+.block_two {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.block_two_item {
+    width: 100%;
+    height: 384px !important;
+    background: rgb(30, 41, 59);
+    background: linear-gradient(90deg, rgba(30, 41, 59, 1) 0%, rgba(2, 8, 23, 1) 100%);
+    border-radius: 10px 0 0 10px;
+    padding: 75px 0;
+    padding-left: 40px;
+}
+
+.block_two_text h3 {
+    color: var(--color-white);
+    font-weight: 700;
+    font-size: 1.875rem;
+}
+
+.block_two_text h3 span {
+    color: var(--color-btn-light);
+}
+
+.block_two_text p {
+    color: var(--color-white);
+}
+
+.block_two_item span {
+    color: var(--color-line);
+}
+
+.block_two_btns button:nth-child(2) {
+    background-color: var(--color-btn-light);
+}
+
+.block_two_btns button:nth-child(1) {
+    background-color: var(--color-site_bg);
+    color: var(--color-white);
+}
+
+.block_two_img {
+    width: 100%;
+    height: 100%;
+    background: rgb(2, 8, 23);
+    background: linear-gradient(90deg, rgba(2, 8, 23, 1) 0%, rgba(57, 127, 241, 1) 100%);
+    border-radius: 0 10px 10px 0;
+    overflow: hidden;
+}
+
+/* ---------------------  block_three_start */
+
+.block_three {
+    padding: 20px;
+}
+
+.block_three_box_border {
+    width: 100%;
+    border: 1px solid var(--color-line);
+    border-radius: 10px;
+}
+
+.block_three_box_border h2 {
+    color: var(--color-white);
+    font-size: 25px;
+}
+
+.block_three .block_three_box img {
+    width: 100%;
+    height: 80%;
+}
+
+/* ******************************************************************  START MODUL PAGE */
+
+.block_modul {
+    padding: 10px 20px;
+}
+
+.block_modul_bigText {
+    color: var(--color-white);
+}
+
+.block_modul .block_modul_filter button {
+    padding: 5px 15px;
+    border-radius: 10px;
+    border: none;
+    color: var(--color-white);
+    background: transparent;
+    border: 1px solid var(--color-line);
+}
+
+.block_modul .block_modul_filter button:nth-child(1) {
+    background-color: var(--color-btn-light);
+    color: var(--color-dark);
+}
+
+/* .----------------  block_modul_card start */
+/* .block_modul_card */
+.block_modul_card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.block_modul_card {
+    text-decoration: none !important;
+}
+
+.block_modul_card h2 {
+    color: var(--color-white);
+}
+
+.block_modul_card_items p {
+    text-decoration: none;
+    color: var(--color-white);
+    background-color: var(--color-active-hover);
+    padding: 2px 10px;
+    border-radius: 20px;
+    font-size: 15px;
+}
+
+/* *******************************************************lessons paga start */
+
+.block_lessons {
+    padding: 20px;
+}
+
+.block_lesson_title {
+    color: var(--color-btn-light);
+    display: flex;
+    align-items: center;
+}
+
+.block_lesson_title p {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--color-white);
+    margin-top: 12px;
+    margin-right: 12px; 
+}
+
+
+
+.block_lessons_about {
+    background: var(--color-active-hover);
+}
+
+.block_lessons_about .about_left h1 {
+    color: var(--color-white);
+}
+
+.block_lessons_about .about_left p {
+    color: var(--color-line);
+    font-size: 18px;
+}
+
+@media(max-width:1140px){
+    .block_lessons_about .about_left p {
+        font-size: 15px;
+    }
+}
+
+.block_lessons_about .about_left span p {
+    color: var(--color-btn-light) !important;
+    font-size: 15px;
+}
+
+.about_right img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+
+/* -------------------------------------------lessons_one_top- */
+.lessons_one_top {
+    background: var(--color-active-hover);
+}
+
+.lessons_one_top_text {
+    color: var(--color-white);
+}
+
+.lessons_one_top_item span {
+    display: flex;
+    align-items: center;
+    color: var(--color-white);
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.lessons_one_top_item span i {
+    margin-right: 10px;
+    color: var(--color-btn-light);
+}
+
+.top_item_right {
+    margin-left: 150px !important;
+}
+
+@media(max-width:1140px){
+    .top_item_right{
+        margin-left: 20px !important;
+    }
+}
+
+/* -----------------accordion start */
+
+
+
+.accordion {
+    background-color: var(--color-active-hover);
+}
+
+.accordion .accordion-item {
+    border: none;
+    background-color: var(--color-active-hover);
+}
+
+.accordion .accordion-item button[aria-expanded='true'] {
+    border-bottom: 1px solid #03b5d2;
+}
+
+.accordion button {
+    position: relative;
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 1em 0;
+    color: #7288a2;
+    font-size: 1.15rem;
+    font-weight: 400;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.accordion button:hover,
+.accordion button:focus {
+    cursor: pointer;
+    color: #03b5d2;
+}
+
+.accordion button:hover::after,
+.accordion button:focus::after {
+    cursor: pointer;
+    color: #03b5d2;
+    border: 1px solid #03b5d2;
+}
+
+.accordion button .accordion-title {
+    padding: 1em 1.5em 1em 0;
+}
+
+.accordion button .icon {
+    display: inline-block;
+    position: absolute;
+    top: 18px;
+    right: 0;
+    width: 22px;
+    height: 22px;
+    border: 1px solid;
+    border-radius: 22px;
+}
+
+.accordion button .icon::before {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 9px;
+    left: 5px;
+    width: 10px;
+    height: 2px;
+    background: currentColor;
+}
+
+.accordion button .icon::after {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 5px;
+    left: 9px;
+    width: 2px;
+    height: 10px;
+    background: currentColor;
+}
+
+.accordion button[aria-expanded='true'] {
+    color: #03b5d2;
+}
+
+.accordion button[aria-expanded='true'] .icon::after {
+    width: 0;
+}
+
+.accordion button[aria-expanded='true']+.accordion-content {
+    opacity: 1;
+    max-height: 9em;
+    transition: all 200ms linear;
+    will-change: opacity, max-height;
+}
+
+.accordion .accordion-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 200ms linear, max-height 200ms linear;
+    will-change: opacity, max-height;
+}
+
+.accordion .accordion-content p {
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 2em 0;
+    color: var(--color-white);
+}
+
+/* ---------- */
+.block_lessons_one_start {
+    box-shadow: inset 0px 0px 10px 10px #4299e1;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.block_lessons_one_start h4 {
+    color: var(--color-white);
+}
+
+.block_lessons_one_start h1 {
+    color: var(--color-white);
+}
+
+.block_lessons_one_start button {
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--color-btn-light);
+    margin-top: 10px;
+}
+
+.block_lessons_one_start hr {
+    margin: 0 !important;
+    color: var(--color-line);
+}
+
+/* ************************************************************************ lesson  page start */
+
+.block_less {
+    padding: 20px;
+}
+
+.block_less_video video {
+    width: 100%;
+}
+
+
+/* -------- acc */
+.acc-kontainer {
+    width: 100%;
+    margin: auto;
+}
+
+.acc-kontainer .acc-body {
+    width: 98%;
+    width: calc(100% - 20px);
+    margin: 0 auto;
+    height: 0;
+    color: rgba(0, 0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.2);
+    line-height: 28px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.acc-kontainer label {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: block;
+    padding: 15px;
+    width: 100%;
+    color: #fff;
+    font-weight: 400;
+    box-sizing: border-box;
+    z-index: 100;
+    font-size: 20px;
+}
+
+.acc-kontainer input {
+    display: none;
+}
+
+.acc-kontainer label:before {
+    font-family: 'FontAwesome';
+    content: '\f067';
+    font-weight: bolder;
+    float: right;
+}
+
+.acc-kontainer input:checked+label {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.acc-kontainer input:checked+label:before {
+    font-family: 'FontAwesome';
+    content: '\f00d';
+    transition: 0.5s;
+}
+
+.acc-kontainer input:checked~.acc-body {
+    height: auto;
+    color: #fff;
+    font-size: 16px;
+    padding: 20px;
+    transition: 0.5s;
+}
+
+.block_lesson_end {
+    background-color: var(--color-active-hover);
+}
+
+.block_lesson_end h1 {
+    color: var(--color-white);
+}
+
+.block_lesson_end button {
+    padding: 10px 25px;
+    background: var(--color-btn-light);
+    border: none;
+    border-radius: 10px;
+}
