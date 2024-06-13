@@ -25,12 +25,12 @@ body {
     overflow: hidden;
 }
 
-.offcanvas{
+.offcanvas {
     background: var(--color-dark);
 }
 
 
-.offcanvas .btn-close{
+.offcanvas .btn-close {
     /* color: var(--color-white) !important; */
     color: red !important;
     background-color: white !important;
@@ -84,7 +84,7 @@ body {
 }
 
 
-.home_link{
+.home_link {
     text-decoration: none;
     font-size: 20px;
     color: var(--color-white);
@@ -338,7 +338,7 @@ body {
     border-radius: 50%;
     background: var(--color-white);
     margin-top: 12px;
-    margin-right: 12px; 
+    margin-right: 12px;
 }
 
 
@@ -356,7 +356,7 @@ body {
     font-size: 18px;
 }
 
-@media(max-width:1140px){
+@media(max-width:1140px) {
     .block_lessons_about .about_left p {
         font-size: 15px;
     }
@@ -400,8 +400,8 @@ body {
     margin-left: 150px !important;
 }
 
-@media(max-width:1140px){
-    .top_item_right{
+@media(max-width:1140px) {
+    .top_item_right {
         margin-left: 20px !important;
     }
 }
@@ -632,4 +632,99 @@ body {
     background: var(--color-btn-light);
     border: none;
     border-radius: 10px;
+}
+
+/* **********************************************************************  login page start */
+
+.container {
+    max-width: 430px;
+    width: 100%;
+    background: var(--color-active-hover);
+    border-radius: 7px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.container .registration {
+    display: none;
+}
+
+#check:checked~.registration {
+    display: block;
+}
+
+#check:checked~.login {
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.container .form {
+    padding: 2rem;
+}
+
+.form header {
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.form input {
+    height: 60px;
+    width: 100%;
+    padding: 0 15px;
+    font-size: 17px;
+    margin-bottom: 1.3rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+    background: transparent;
+    color: var(--color-white);
+}
+
+.form input:focus {
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.form a {
+    font-size: 16px;
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+.form a:hover {
+    text-decoration: underline;
+}
+
+.form input.button {
+    color: #fff;
+    background: var(--color-dark);
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 1.7rem;
+    cursor: pointer;
+    transition: 0.4s;
+    transition: 0.5s;
+}
+
+.form input.button:hover {
+    background: var(--color-line);
+}
+
+.signup {
+    font-size: 17px;
+    text-align: center;
+    color: var(--color-white);
+}
+
+.signup label {
+    color: var(--color-btn-light);
+    cursor: pointer;
+}
+
+.signup label:hover {
+    text-decoration: underline;
 }

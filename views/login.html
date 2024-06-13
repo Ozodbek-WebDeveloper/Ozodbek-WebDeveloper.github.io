@@ -13,17 +13,17 @@
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- ----------- ----- link style css -->
-    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="../public/css/style.css">
     <!---------------------- link btn css -->
-    <link rel="stylesheet" href="public/css/btn.css">
+    <link rel="stylesheet" href="../public/css/btn.css">
     <!-- -----------------   media css -->
-    <link rel="stylesheet" href="public/css/media.css">
+    <link rel="stylesheet" href="../public/css/media.css">
 </head>
 
 <body>
     <header>
 
-
+        
         <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
             aria-labelledby="offcanvasExampleLabel">
             <div class="offcanvas-header">
@@ -37,28 +37,28 @@
                                 <h3 class="saidbar_text_saxifa">Страницы</h3>
                                 <ul class="nav flex-column gap-3  ">
                                     <li class="nav-item">
-                                        <a href="#" class="active">
+                                        <a href="../index.html">
                                             <i class="fa-solid fa-house fs-6 ps-1 "></i>
                                             <span class="ms-2 mt-1">
                                                 Дом</span>
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="views/modul.html">
+                                        <a href="modul.html">
                                             <i class="fa-brands fa-hive ps-1"></i>
                                             <span class="ms-2 mt-1">
                                                 Модуль</span>
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="views/lessons.html">
+                                        <a href="lessons.html">
                                             <i class="fa-solid fa-book ps-1"></i>
                                             <span class="ms-2 mt-1">
                                                 уроки</span>
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="views/lesson.html">
+                                        <a href="lesson.html">
                                             <i class="fa-solid fa-pen-to-square ps-1"></i>
                                             <span class="ms-2 mt-1">урок</span>
                                         </a>
@@ -138,25 +138,25 @@
                         <h3 class="saidbar_text_saxifa">Страницы</h3>
                         <ul class="nav flex-column gap-3  ">
                             <li class="nav-item">
-                                <a href="#" class="active">
+                                <a href="../index.html">
                                     <i class="fa-solid fa-house fs-6 ps-1 "></i>
                                     <span class="ms-2 mt-1">дом</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="views/modul.html">
+                                <a href="modul.html">
                                     <i class="fa-brands fa-hive ps-1"></i>
                                     <span class="ms-2 mt-1">Модуль</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="views/lessons.html">
+                                <a href="lessons.html">
                                     <i class="fa-solid fa-book ps-1"></i>
                                     <span class="ms-2 mt-1">уроки</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="views/lesson.html">
+                                <a href="lesson.html">
                                     <i class="fa-solid fa-pen-to-square ps-1"></i>
                                     <span class="ms-2 mt-1">урок</span>
                                 </a>
@@ -194,106 +194,37 @@
             <!-- **********************************  main content start -->
             <div class="col-xl-10 col-lg-9 col-md-9 col-sm-9 col-12 main_content  ">
                 <!-- ---- block_one start -->
-                <div class="main_content_one">
-                    <div class="row  block_one  d-flex  flex-column flex-lg-row ">
-                        <div class="col block_one_img d-none d-md-block ">
-                            <img src="https://www.sammi.ac/_next/image?url=%2Fbackend.png&w=384&q=75" alt="">
-                        </div>
-                        <div class="col block_one_item  p-5 mt-3 mt-lg-0  ">
-                            <div class="block_one_text">
-                                <h3> Продвинутый <span>Backend </span> курс. </h3>
-
-                                <p>Что вы изучите в курсе: NodeJS, ExpressJS, SMTP, токен доступа и обновления, файлы
-                                    cookie, промежуточное программное обеспечение, авторизация, шаблоны, ReactJS, запрос
-                                    Tanstack, мутация, перехватчики, служба электронной почты и т. д.</p>
-                            </div>
-                            <!--  -->
-                            <a href="./views/login.html">
-                                <button class="button-92 align-items-start " role="button">
-                                    Бесплатная регистрация
-                                </button>
-                            </a>
-                            <!--  -->
-                        </div>
+                <div class="container mt-5">
+                    <input type="checkbox" id="check">
+                    <div class="login form">
+                      <header class="text-white" >Login</header>
+                      <form action="#">
+                        <input type="text" placeholder="Enter your email">
+                        <input type="password" placeholder="Enter your password">
+                        <a href="#">Forgot password?</a>
+                        <input type="button" class="button" value="Login">
+                      </form>
+                      <div class="signup">
+                        <span class="signup">Don't have an account?
+                          <label for="check">Signup</label>
+                        </span>
+                      </div>
                     </div>
-                    <!-- block_two start  -->
-                    <div class=" row block_two mt-2 d-flex  flex-column flex-lg-row ">
-                        <div class="col block_two_item ">
-                            <div class="block_two_text">
-                                <h3><span>Boymer</span>- курсы программирования</h3>
-                                <p>Добро пожаловать на платформу практических курсов по программированию. Здесь
-                                    вы можете пройти все платные курсы бесплатно.</p>
-                            </div>
-                            <!--  -->
-                            <div class="block_two_btns d-flex align-items-center gap-2 pe-5  mb-3   mb-lg-5  ">
-                                <button class=" fw-bold w-50 text-center rounded-2 p-2  border-0" role="button">
-                                    курсы</button>
-                                <button class=" fw-bold  w-50 text-center rounded-2 p-2 border-0" role="button">Проекты
-                                </button>
-                            </div>
-                            <!--  -->
-                            <span class="mt-5">* Инвестируйте в свою будущую жизнь.</span>
-                        </div>
-                        <!--  -->
-                        <div class="col block_two_img  d-none d-md-block  mt-3 mt-lg-0 ">
-                            <img src="https://www.sammi.ac/react.svg" alt="">
-                        </div>
+                    <div class="registration form">
+                      <header class="text-white"  >Signup</header>
+                      <form action="#">
+                        <input type="text" placeholder="Enter your email">
+                        <input type="password" placeholder="Create a password">
+                        <input type="password" placeholder="Confirm your password">
+                        <input type="button" class="button" value="Signup">
+                      </form>
+                      <div class="signup">
+                        <span class="signup">Already have an account?
+                          <label for="check">Login</label>
+                        </span>
+                      </div>
                     </div>
-                    <!-- block_three start -->
-                    <div class="row block_three">
-                        <div class="col-12">
-                            <h2 class="text-white  my-4 ">Лучшие курсы</h2>
-                        </div>
-                        <!--  -->
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-3  block_three_box overflow-hidden ">
-                            <div class="block_three_box_border "> <img
-                                    src="https://www.sammi.ac/_next/image?url=https%3A%2F%2Futfs.io%2Ff%2F35ca3db9-fb43-4f12-bd48-8b08a503db09-kilwwj.png&w=1920&q=75"
-                                    alt="">
-                                <h2 class="p-2">JavaScript</h2>
-                            </div>
-                        </div>
-                        <!--  -->
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-3 block_three_box  overflow-hidden ">
-                            <div class="block_three_box_border"> <img
-                                    src="https://www.sammi.ac/_next/image?url=https%3A%2F%2Futfs.io%2Ff%2F35ca3db9-fb43-4f12-bd48-8b08a503db09-kilwwj.png&w=1920&q=75"
-                                    alt="">
-                                <h2 class="p-2">JavaScript</h2>
-                            </div>
-                        </div>
-                        <!--  -->
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-3 block_three_box  overflow-hidden ">
-                            <div class="block_three_box_border"> <img
-                                    src="https://www.sammi.ac/_next/image?url=https%3A%2F%2Futfs.io%2Ff%2F35ca3db9-fb43-4f12-bd48-8b08a503db09-kilwwj.png&w=1920&q=75"
-                                    alt="">
-                                <h2 class="p-2">JavaScript</h2>
-                            </div>
-                        </div>
-                        <!--  -->
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-3 block_three_box  overflow-hidden ">
-                            <div class="block_three_box_border"> <img
-                                    src="https://www.sammi.ac/_next/image?url=https%3A%2F%2Futfs.io%2Ff%2F35ca3db9-fb43-4f12-bd48-8b08a503db09-kilwwj.png&w=1920&q=75"
-                                    alt="">
-                                <h2 class="p-2">JavaScript</h2>
-                            </div>
-                        </div>
-                        <!--  -->
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-3 block_three_box  overflow-hidden ">
-                            <div class="block_three_box_border"> <img
-                                    src="https://www.sammi.ac/_next/image?url=https%3A%2F%2Futfs.io%2Ff%2F35ca3db9-fb43-4f12-bd48-8b08a503db09-kilwwj.png&w=1920&q=75"
-                                    alt="">
-                                <h2 class="p-2">JavaScript</h2>
-                            </div>
-                        </div>
-                        <!--  -->
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-3 block_three_box  overflow-hidden ">
-                            <div class="block_three_box_border"> <img
-                                    src="https://www.sammi.ac/_next/image?url=https%3A%2F%2Futfs.io%2Ff%2F35ca3db9-fb43-4f12-bd48-8b08a503db09-kilwwj.png&w=1920&q=75"
-                                    alt="">
-                                <h2 class="p-2">JavaScript</h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                  </div>
             </div>
         </div>
     </header>
