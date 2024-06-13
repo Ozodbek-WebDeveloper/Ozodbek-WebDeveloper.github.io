@@ -8,6 +8,9 @@
     --color-btn-light: #3b82f6;
 }
 
+body{
+    background-color: var(--color-site_bg);
+}
 * {
     font-family: sans-serif;
     list-style: none;
@@ -76,11 +79,11 @@ body {
     background-color: var(--color-dark);
     height: 100vh;
     padding: 20px;
-    overflow-y: scroll;
+    overflow-y: scroll !important;
 }
 
 .saidbar::-webkit-scrollbar {
-    display: none;
+    display: none !important;
 }
 
 
@@ -728,3 +731,50 @@ body {
 .signup label:hover {
     text-decoration: underline;
 }
+
+/* ************************************  dashboard page start    */
+
+.block_profil_left {
+    width: 50%;
+}
+
+.block_profil_left img {
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
+}
+
+.block_profil_left span h1 {
+    color: var(--color-white);
+    text-transform: capitalize;
+}
+
+.block_profil_left span p {
+    color: var(--color-line);
+    font-size: 20px;
+}
+
+
+.block_profil_right button {
+    border: none;
+    color: black;
+    background-color: var(--color-btn-light);
+    padding: 10px 25px;
+    border-radius: 5px;
+}
+
+
+.block_profil .filter_buttons{
+    background-color: var(--color-line);
+    flex-wrap: wrap !important;
+}
+
+.block_profil .filter_buttons .filter_btn{
+    padding: 2px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    color: var(--color-white);
+    justify-content: center;
+}
+

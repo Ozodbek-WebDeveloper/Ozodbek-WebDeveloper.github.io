@@ -64,7 +64,7 @@
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="#">
+                                        <a href="#" class="active">
                                             <i class="fa-solid fa-circle-user ps-1"></i>
                                             <span class="ms-2 mt-1">панель приборов</span>
                                         </a>
@@ -112,8 +112,10 @@
                             <i class="fa-solid fa-bars"></i>
                         </a>
                     </div>
-                    <img src="https://www.sammi.ac/favicon.svg" alt="">
-                    Boymen
+                    <a href="../index.html" class="home_link">
+                        <img src="https://www.sammi.ac/favicon.svg" alt="">
+                        boymen
+                    </a>
                 </div>
                 <div class="navbar_account d-flex align-items-center  ">
                     <ul class="connect">
@@ -162,7 +164,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="#">
+                                <a href="#" class="active">
                                     <i class="fa-solid fa-circle-user ps-1"></i>
                                     <span class="ms-2 mt-1">панель приборов</span>
                                 </a>
@@ -192,32 +194,115 @@
                 </div>
             </div>
             <!-- **********************************  main content start -->
-            <div
-                class="col-xl-10 col-lg-9 col-md-9 col-sm-9 col-12 main_content d-flex justify-content-center align-items-center ">
+            <div class="col-xl-10 col-lg-9 col-md-9 col-sm-9 col-12  main_content ">
                 <!-- ---- block_one start -->
-                <div class="row block_profil ">
-                    <div class="col">
-                        <div class="block_profil_left">
-                            <img src="" alt="">
+                <div class="row block_profil p-5  ">
+                    <div class="col-12 d-flex align-items-center justify-content-between">
+                        <div class="block_profil_left d-flex  gap-4 align-items-center ">
+                            <img src="https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yZUlmTTNsbzBrQzk2YnJ0QVJyTndGZkJLejQifQ?width=80"
+                                alt="">
                             <span>
                                 <h1>alexander rybak</h1>
                                 <p><i class="fa-solid fa-calendar-days"></i> 13.06.2024</p>
                             </span>
                         </div>
-                        <div class="block_profil_right">
+                        <div class="block_profil_right ">
                             <a href="#">
-                                <button>Profilni tahrirlash </button>
+                                <button>редактировать профиль</button>
                             </a>
                         </div>
                     </div>
+                    <!--  -->
+                    <!-- -------- -->
+                    <div
+                        class=" row filter_buttons d-flex  gap-2  mt-5  align-items-center   justify-content-between  p-3 rounded-2">
+                        <button class=" col-xl-3 col-lg-3 col-md-3 col-12 filter_btn d-flex gap-2 align-items-center  "
+                            data-category="technology">
+                            <i class="fa-solid fa-list-ul"></i>
+                            Мои курсы
+                        </button>
+                        <!--  -->
+                        <button class=" col-xl-3 col-lg-3 col-md-3 col-12 filter_btn d-flex gap-2 align-items-center  "
+                            data-category="science">
+                            <i class="fa-solid fa-code"></i>
+                            Мои проекты
+                        </button>
+                        <!--  -->
+                        <button class=" col-xl-3 col-lg-3 col-md-3 col-12 filter_btn d-flex gap-2 align-items-center"
+                            data-category="art">
+                            <i class="fa-solid fa-crown"></i>
+                            избранное
+                        </button>
+                        <!--  -->
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mt-3  block_filter_card  "
+                        data-category="technology">
+                        <a href="#" class="block_modul_card">
+                            <img src="https://www.sammi.ac/_next/image?url=https%3A%2F%2Futfs.io%2Ff%2F79dc1a37-4a40-4a87-b35c-50649a50661e-1rd4ri.png&w=1920&q=75"
+                                alt="">
+                            <h2 class="my-3">Google drive - Clone</h2>
+                            <div class="block_modul_card_items d-flex flex-wrap gap-1  ">
+                                <p href="#">Next js</p>
+                                <p href="#">React</p>
+                                <p href="#">Firebase</p>
+                                <p href="#">Stripe</p>
+                                <p href="#">TypeScript</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mt-3  block_filter_card "
+                        data-category="technology">
+                        <a href="#" class="block_modul_card">
+                            <img src="https://www.sammi.ac/_next/image?url=https%3A%2F%2Futfs.io%2Ff%2F79dc1a37-4a40-4a87-b35c-50649a50661e-1rd4ri.png&w=1920&q=75"
+                                alt="">
+                            <h2 class="my-3">Google drive - Clone two</h2>
+                            <div class="block_modul_card_items d-flex flex-wrap gap-1  ">
+                                <p href="#">Next js</p>
+                                <p href="#">React</p>
+                                <p href="#">Firebase</p>
+                                <p href="#">Stripe</p>
+                                <p href="#">TypeScript</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mt-3   block_filter_card"
+                        data-category="science">
+                        <a href="#" class="block_modul_card">
+                            <img src="https://www.sammi.ac/_next/image?url=https%3A%2F%2Futfs.io%2Ff%2F79dc1a37-4a40-4a87-b35c-50649a50661e-1rd4ri.png&w=1920&q=75"
+                                alt="">
+                            <h2 class="my-3">Google drive - add</h2>
+                            <div class="block_modul_card_items d-flex flex-wrap gap-1  ">
+                                <p href="#">Next js</p>
+                                <p href="#">React</p>
+                                <p href="#">Firebase</p>
+                                <p href="#">Stripe</p>
+                                <p href="#">TypeScript</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mt-3   block_filter_card"
+                        data-category="art">
+                        <a href="#" class="block_modul_card">
+                            <img src="https://www.sammi.ac/_next/image?url=https%3A%2F%2Futfs.io%2Ff%2F79dc1a37-4a40-4a87-b35c-50649a50661e-1rd4ri.png&w=1920&q=75"
+                                alt="">
+                            <h2 class="my-3">Google drive - remove</h2>
+                            <div class="block_modul_card_items d-flex flex-wrap gap-1  ">
+                                <p href="#">Next js</p>
+                                <p href="#">React</p>
+                                <p href="#">Firebase</p>
+                                <p href="#">Stripe</p>
+                                <p href="#">TypeScript</p>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
     </header>
     <!-- **************************** all js links****************************** -->
     <!-- --------- js link bootstrab  -->
 
     <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../public/js/script.js"></script>
 </body>
 
 </html>
