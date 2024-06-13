@@ -636,7 +636,7 @@ body {
 
 /* **********************************************************************  login page start */
 
-.container {
+.container_login {
     max-width: 430px;
     width: 100%;
     background: var(--color-active-hover);
@@ -644,7 +644,7 @@ body {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-.container .registration {
+.container_login .registration {
     display: none;
 }
 
@@ -660,7 +660,7 @@ body {
     display: none;
 }
 
-.container .form {
+.container_login .form {
     padding: 2rem;
 }
 
