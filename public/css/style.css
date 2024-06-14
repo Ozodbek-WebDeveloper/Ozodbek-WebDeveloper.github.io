@@ -409,6 +409,11 @@ body {
     }
 }
 
+@media(max-width:576px) {
+    .top_item_right {
+        margin-left: 0px !important;
+    }
+}
 /* -----------------accordion start */
 
 
@@ -742,6 +747,13 @@ body {
     width: 30%;
     height: 30%;
     border-radius: 50%;
+}
+
+@media(max-width:768px){
+    .block_profil_left img{
+        width: 50%;
+        height: 50%;
+    }
 }
 
 .block_profil_left span h1 {
